@@ -50,13 +50,13 @@ public class Fauxdango {
                 System.out.println();
                 System.out.println("Welcome, " + user.toString());
             } else if (chosen == choiceMainListAllMovies) {
-                for (Movie movie : Datastore.getMovies()) {
+                Datastore.getMovies().forEach(movie -> {
                     System.out.println(movie.toString());
-                }
+                });
             } else if (chosen == choiceMainListAllTheaters) {
-                for (Theater theater : Datastore.getTheaters()) {
+                Datastore.getTheaters().forEach(theater -> {
                     System.out.println(theater.toString());
-                }
+                });
             } else if (chosen == choiceMainListAllActors) {
                 for (Actor actor : Datastore.getActors()) {
                     System.out.println(actor.toString());
@@ -94,5 +94,3 @@ public class Fauxdango {
     }
 
 }
-
-
