@@ -8,7 +8,7 @@ public class Main {
 
         // TODO 00 + List your team here
         System.out.println("Vivek (vrp5109@psu.edu)");
-        System.out.println("John (@psu.edu)");
+        System.out.println("John (jkb6036@psu.edu)");
         System.out.println("Gerald (gsb5249@psu.edu)");
         System.out.println("Mohamed (mrc63@psu.edu)");
         System.out.println("===========================");

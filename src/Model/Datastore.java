@@ -171,6 +171,14 @@ public class Datastore {
     public static List<Showing> getShowings() {return showings;}
     public static List<Auditorium> getAuditoriums() {return auditoriums;}
 
+    /**
+     * Retrieves a Movie object from the list of movies by its primary key ID.
+     *
+     * @param id the primary key ID of the Movie to retrieve.
+     * @return the Movie object with the given ID, or null if no such Movie is found.
+     * @author John Biletz (jkb6036@psu.edu)
+     * @author Ildar Sadykov (iqs5261@psu.edu)
+     */
     public static Movie getMovieById(long id) {
         for (Movie movie : movies) {
             if (movie.getPrimaryKey() == id) {
@@ -180,6 +188,14 @@ public class Datastore {
         return null;
     }
 
+    /**
+     * Retrieves an Actor object from the list of actors by its primary key ID.
+     *
+     * @param id the primary key ID of the Actor to retrieve.
+     * @return the Actor object with the given ID, or null if no such Actor is found.
+     * @author John Biletz (jkb6036@psu.edu)
+     * @author Ildar Sadykov (iqs5261@psu.edu)
+     */
     public static Actor getActorById(long id) {
         for (Actor actor : actors) {
             if (actor.getPrimaryKey() == id) {
